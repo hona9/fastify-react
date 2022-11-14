@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+input, body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+  color: rgb(47, 176, 0);
+}
+
+h1 i{
+  color: rgb(0, 165, 3);
+}
+
+.note{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.note-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0px;
+  /* background-color: #eeeeee; */
+  box-shadow: 0 0 5px #aaa;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.msg{
+  padding: 15px;
+  color: #777;
+  font-style: italic;
+}
+
+.note-row.heading{
+  background: rgb(73, 168, 0);
+  color: white;
+  font-weight: bold;
+  
+}
+
+.note-name, .operations{
+  padding: 15px;
+}
+
+.note-name{
+  flex-basis: 40%;
+}
+
+.operations{
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.btn{
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin: -6px 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+
+.edit{
+  background: rgb(255, 153, 0);
+}
+
+.delete{
+  background: red;
+}
+
+.done{
+  background: rgb(0, 175, 0);
+}
+
+
+.cancel{
+  background: red;
+}
+
+
+.add{
+  background: rgb(73, 168, 0);
+  margin: 10px 0 0 50%;
+  transform: translate(-50%,0) scale(1);
+}
+
+input{
+  font-size: 16px;
+  padding: 8px;
+  margin: -9px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus{
+  border-color:#999;
+}
+
+@media only screen and (max-width: 476px){
+  .note{
+    width: 95vw;
+  }
+  .note-name,  .operations, .msg{
+    padding: 12px;
+  }
+}
